@@ -5,7 +5,8 @@ A development tool for visualizing `DOMRect` rectangles.
 
 ## Showcase
 
-![image.png](./assets/image.png)
+![image.png](https://cdn.jsdelivr.net/gh/ausprain/rect-visualizer/assets/image.png)
+
 
 ## Install
 
@@ -37,4 +38,4 @@ rv.clear();
 - click the item to toggle the visibility.
 - double-click the item to remove it.
 - drag at the top or bottom of the hover hub to move it.
-![image.png](./assets/image1.png)
+![image.png](https://cdn.jsdelivr.net/gh/ausprain/rect-visualizer/assets/image1.png)
