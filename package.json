@@ -1,0 +1,29 @@
+{
+  "name": "rect-visualizer",
+  "version": "1.0.0",
+  "description": "A development tool for visualizing `DOMRect` rectangles.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "tsc --project tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "vite": "^7.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

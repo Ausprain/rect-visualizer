@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw DOMRects</title>
+</head>
+<body>
+  <div id="app"></div>
+
+  <div class="editor" contenteditable>
+    <div><span style="font-size: 50px;">AAAAA</span>zzzzzzzzz<br><span style="font-size: 20px;">AAAAA</span>zzzzzzzzzz</div>
+    <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deserunt?
+      <b>
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sunt!
+      </b>
+    </div>
+    <div>Adipisci, minima doloremque? Provident minima quasi quia voluptates. Molestias, voluptas?
+      <b>
+        Perspiciatis eum cumque est vel!
+        A libero possimus maiores porro neque inventore, harum nesciunt rerum.
+      </b>
+    </div>
+    <div>Quae iste suscipit vero ipsum quibusdam obcaecati, aut odit voluptates.
+      <b>
+        Quod facere voluptates nam distinctio!
+        Accusamus aspernatur voluptates hic incidunt dignissimos animi molestias saepe ab!
+      </b>
+    </div>
+    <div>Corrupti architecto rem, alias accusantium modi facere quidem consequuntur enim.
+      <b>
+        Dolor ipsa porro iure provident!
+        Accusantium, esse ad praesentium in debitis non. Rem, sit quisquam.
+      </b>
+    </div>
+    <div>Officia facilis autem consequatur illum alias architecto iste cumque omnis?
+      <b>
+        Quasi reiciendis harum officiis incidunt.
+        Alias earum ea sequi tempora. Commodi illum eius non vel.
+      </b>
+    </div>
+    <div>Quos, ipsam? Sunt maxime suscipit vero illo magnam ut officiis.
+      <b>
+        Magnam ipsam molestiae officiis quisquam!
+        Deserunt repellendus quos, eligendi reiciendis vitae dolor fuga neque porro?
+      </b>
+    </div>
+    <div>Placeat sapiente soluta quidem non laudantium et fugit maiores earum.
+      <b>
+        Nobis neque tempora dolor quia.
+        Ullam deserunt ipsum non consequatur repellendus maxime a voluptatem fugiat?
+      </b>
+    </div>
+    <div>Nihil cum, minima animi id sapiente accusamus dolores laboriosam porro!
+      <b>
+        Veniam officia voluptatibus praesentium sit!
+        Voluptates iste natus magni eum expedita repudiandae ut doloribus unde.
+      </b>
+    </div>
+    <div>Ipsum quaerat labore similique ullam? Id quod asperiores beatae aperiam.
+      <b>
+        Neque veniam quaerat vitae incidunt.
+        Expedita quas quasi rem laudantium fuga rerum saepe quod. Deleniti?
+      </b>
+    </div>
+    <div>Tempora repudiandae maiores fugit alias iure eveniet adipisci dolorum tempore!
+      <b>
+        Similique repellat maiores fugit ipsa?
+        Adipisci saepe molestiae, reprehenderit eum minus nam sed ab cupiditate.
+      </b>
+    </div> -->
+  </div>
+
+  <script type="module" src="/main.ts"></script>
+  <script>
+    window.showRect = () => {
+      const editor = document.querySelector(".editor");
+      const r = document.createRange()
+      r.selectNodeContents(editor)
+      const rects = r.getClientRects()
+      const topRect = getSelection().getRangeAt(0).getClientRects()[0]
+      rv.clear()
+      rv.drawClientRect(topRect, {name: "topRect", color: "#239923aa"})
+      rv.drawClientRects(rects, {clear: false})
+    }
+  </script>
+</body>
+</html>
