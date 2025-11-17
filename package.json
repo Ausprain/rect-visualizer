@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "keywords": [
+    "rect",
+    "DOMRect"
+  ],
   "files": [
     "dist"
   ],
@@ -13,6 +17,12 @@
       "import": "./dist/index.js",
       "require": "./dist/index.umd.js"
     }
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Ausprain/rect-visualizer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ausprain/rect-visualizer.git"
   },
   "scripts": {
     "dev": "vite",
