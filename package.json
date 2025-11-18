@@ -1,6 +1,6 @@
 {
   "name": "rect-visualizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A development tool for visualizing `DOMRect` rectangles.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
